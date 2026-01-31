@@ -30,5 +30,16 @@
         </div>
     </div>
    </div> 
+   <script>
+    const apikey="6235748a79979d43e49b3be85e9fb161";
+    const apiurl="https://api.openweathermap.org/data/2.5/weather?q=kangra";
+    async function checkWeather() {
+        const response=await fetch(apiurl + `&appid=${apikey}`);
+        var dat= await response.json();
+        console.log(data);
+        
+    }
+    checkWeather();
+   </script>
 </body>
 </html>
